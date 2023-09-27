@@ -20,31 +20,31 @@ Then, we applied a Selective Sampling (SS) technique to eliminate sequences of l
 sequence of normal working cycles that culminate in a leak event. The rationale behind this approach is to focus solely on when the leakage commenced, the contributing factors, and the feasibility of predicting its occurrence ahead
 of time.
 
-![Local Image](SS_poster.jpg)
+![Local Image](Data\SS_poster.jpg)
 
 Finally, to anticipate the leakages, we adopted a Ahead-of-Time (AoT) strategy where we consider a value A ∈ {0, 1, 2, ..., T}, where A indicates the anticipation value, in 10 seconds intervals, up to T intervals. Then, we applied a
 Random Forest algorithm to predict the label for each A value, anticipating the leakages up to 3 hours. The trainning process used a 70/30 holdout split ration, being further partioned into a validation set (using another 70/30 holdout
 split of the trainning set). The model was trained and optimized using a bayesian approach provided by the optuna package. The results are illustrated on the Table 1 and on the graphics bellow for each labeling strategy.
 
-![Local Image](Results.png)
+![Local Image](Data\Results.png)
 
 
 
 ## PCA WITH BIRCH CLUSTERING
 Air leaks<br/>
-[Local PDF](BirchAnticipationGraphics_RF_Air.pdf) <br/>
+[Local PDF](Data\BirchAnticipationGraphics_RF_Air.pdf) <br/>
 Oil leaks<br/>
-[Local PDF](BirchAnticipationGraphics_RF_Oil.pdf)<br/>
+[Local PDF](Data\BirchAnticipationGraphics_RF_Oil.pdf)<br/>
 ## PCA WITH ISOLATION FOREST
 Air leaks<br/>
-[Local PDF](IforestAnticipationGraphics_RF_Air.pdf)<br/>
+[Local PDF](Data\IforestAnticipationGraphics_RF_Air.pdf)<br/>
 Oil leaks<br/>
-[Local PDF](IforestAnticipationGraphics_RF_Oil.pdf)<br/>
+[Local PDF](Data\IforestAnticipationGraphics_RF_Oil.pdf)<br/>
 ## PCA WITH KMEANS
 Air leaks<br/>
-[Local PDF](KmeansAnticipationGraphics_RF_Air.pdf)<br/>
+[Local PDF](Data\KmeansAnticipationGraphics_RF_Air.pdf)<br/>
 Oil leaks<br/>
-[Local PDF](KmeansAnticipationGraphics_RF_Oil.pdf)<br/>
+[Local PDF](Data\KmeansAnticipationGraphics_RF_Oil.pdf)<br/>
 
 
 ## CONTRIBUTIONS
@@ -70,4 +70,15 @@ This work is supported by: European Structural and Investment Funds in the FEDER
 SIFN-01-9999-FN-179826]
 
 ## Original Poster 
-[Local PDF](Poster.pdf)
+[Local PDF](Data\Poster.pdf)
+
+## Code Execution
+For this work we only allow three unsupervised methods (e.g., Kmeans, Birch and Iforest) for the labeling process. To execute the script please consider the following command:
+
+``` cmd
+python Comp_PCAApproach.py <task> <unsupervised_labeling>
+```
+
+where task represents the air leaks or the oil leaks detection task and unsupervised_labeling represents one of the three unsupervised methods (e.g., Kmeans, Birch and Iforest).
+
+
