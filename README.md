@@ -22,6 +22,10 @@ of time.
 
 ![Local Image](SS_poster.jpg)
 
+Finally, to anticipate the leakages, we adopted a Ahead-of-Time (AoT) strategy where we consider a value A ∈ {0, 1, 2, ..., T}, where A indicates the anticipation value, in 10 seconds intervals, up to T intervals. Then, we applied a
+Random Forest algorithm to predict the label for each A value, anticipating the leakages up to 3 hours. The trainning process used a 70/30 holdout split ration, being further partioned into a validation set (using another 70/30 holdout
+split of the trainning set). The model was trained and optimized using a bayesian approach provided by the optuna package. The results are illustrated on the Table 1 and on the graphics bellow for each labeling strategy.
+
 ![Local Image](Results.png)
 
 
