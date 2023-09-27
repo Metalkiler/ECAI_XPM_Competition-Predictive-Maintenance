@@ -22,7 +22,8 @@ of time.
 
 ![Local Image](SS_poster.jpg)
 
-tabela aqui
+![Local Image](Results.png)
+
 
 
 ## PCA WITH BIRCH CLUSTERING
