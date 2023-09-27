@@ -20,3 +20,49 @@ Then, we applied a Selective Sampling (SS) technique to eliminate sequences of l
 sequence of normal working cycles that culminate in a leak event. The rationale behind this approach is to focus solely on when the leakage commenced, the contributing factors, and the feasibility of predicting its occurrence ahead
 of time.
 
+![Local Image](SS_poster.jpg)
+
+tabela aqui
+
+
+## PCA WITH BIRCH CLUSTERING
+Air leaks<br/>
+[Local PDF](BirchAnticipationGraphics_RF_Air.pdf) <br/>
+Oil leaks<br/>
+[Local PDF](BirchAnticipationGraphics_RF_Oil.pdf)<br/>
+## PCA WITH ISOLATION FOREST
+Air leaks<br/>
+[Local PDF](IforestAnticipationGraphics_RF_Air.pdf)<br/>
+Oil leaks<br/>
+[Local PDF](IforestAnticipationGraphics_RF_Oil.pdf)<br/>
+## PCA WITH KMEANS
+Air leaks<br/>
+[Local PDF](KmeansAnticipationGraphics_RF_Air.pdf)<br/>
+Oil leaks<br/>
+[Local PDF](KmeansAnticipationGraphics_RF_Oil.pdf)<br/>
+
+
+## CONTRIBUTIONS
+With the conducted work, we were able to achieve the following contributions:
+1. Anomaly Detection comparision using different approachs (Supervised and Unsupervised);
+2. Informative Ahead of Time prevention study up to three hours in advance;
+3. Selective Sampling (SS) that covers with more detail all anomalies and normal conditions while retaining a realistic imbalanced disruption ratio of examples;
+
+## REFERENCES
+–Optuna package for optimization methods -: https://optuna.org/
+–KDD Poster for Competition Predictive Maintenance XPM -: https://slawomirnowaczyk.wixsite.com/ecai-xpm
+–Veloso, B., Ribeiro, R. P., Gama, J., & Pereira, P. M. (2022). The MetroPT dataset for predictive maintenance. Scientific Data, 9(1), 764.
+–Davari, N., Veloso, B., Ribeiro, R. P., Pereira, P. M., & Gama, J. (2021, October). Predictive maintenance based on anomaly detection using deep learning for air production unit in the railway industry. In 2021 IEEE 8th International
+Conference on Data Science and Advanced Analytics (DSAA) (pp. 1-10). IEEE.
+–Ribeiro, D., Matos, L. M., Moreira, G., Pilastri, A., & Cortez, P. (2022). Isolation Forests and Deep Autoencoders for Industrial Screw Tightening Anomaly Detection. Computers, 11(4), 54. MDPI AG. Retrieved from
+http://dx.doi.org/10.3390/computers11040054
+–Ribeiro, D., Matos, L.M., Cortez, P., Moreira, G., Pilastri, A. (2021). A Comparison of Anomaly Detection Methods for Industrial Screw Tightening. In: Gervasi, O., et al. Computational Science and Its Applications – ICCSA 2021.
+ICCSA 2021. Lecture Notes in Computer Science(), vol 12950. Springer, Cham. https://doi.org/10.1007/978-3-030-86960-1_34
+
+
+## ACKNOWLEDGMENTS
+This work is supported by: European Structural and Investment Funds in the FEDER component, through the Operational Competitiveness and Internationalization Programme (COMPETE 2020) [Project nº 179826; Funding Reference:
+SIFN-01-9999-FN-179826]
+
+## Original Poster 
+[Local PDF](Poster.pdf)
